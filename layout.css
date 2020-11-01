@@ -8,8 +8,8 @@ Licence URI: https://www.os-templates.com/template-terms
 File: Layout CSS
 */
 
-@import url("https://anageek.github.io/main/font-awesome.min.css");
-@import url("https://anageek.github.io/main/framework.css");
+@import url("https://raw.githubusercontent.com/anageek/anageek.github.io/main/font-awesome.min.css");
+@import url("https://raw.githubusercontent.com/anageek/anageek.github.io/main/framework.css");
 
 /* Rows
 --------------------------------------------------------------------------------------------------------------- */
