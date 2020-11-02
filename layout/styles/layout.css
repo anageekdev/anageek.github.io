@@ -42,13 +42,12 @@ File: Layout CSS
 
 /* Page Intro
 --------------------------------------------------------------------------------------------------------------- */
-#pageintro{padding:20px 0 100px 0; }
+#pageintro{color:#FFFFFF;padding:200px 0 100px 0; }
 
-#pageintro article{display:block; max-width:75%;}
-#pageintro .heading{margin-bottom:5px; font-size:3rem }
-#pageintro p{font-size:20px; line-height:2;}
+#pageintro article{display:block; max-width:100%;}
+#pageintro .heading{margin-bottom:5px; font-size:3rem ;}
+#pageintro p{color:#222222;font-size:20px; line-height:2;font-weight: 100;}
 #pageintro footer{margin-top:50px;}
-
 
 /* Content Area
 --------------------------------------------------------------------------------------------------------------- */
@@ -74,7 +73,7 @@ File: Layout CSS
 .overview article{display:block; position:relative; padding:0 0 0 70px;}
 .overview article *{margin:0; padding:0;}
 .overview article i{display:inline-block; position:absolute; top:0; left:0; width:50px; overflow:hidden; line-height:1; font-size:36px;}
-.overview article .heading, .overview article p{margin-bottom:20px;}
+.overview article .heading, .overview article p{margin-bottom:10px;}
 
 .testimonials li:last-child{margin-bottom:0;}/* Used when elements stack in smaller viewports */
 .testimonials blockquote{margin-bottom:30px; padding:20px;}
@@ -282,11 +281,16 @@ input:focus, textarea:focus, *:required:focus{border-color:#04DEE0;}
 
 
 /* Rows */
-.row0, .row0 a{color:#FFFFFF;}
+
+.row1{
+	position:absolute;
+	top: 1; }
+.row0 a{color:#FFFFFF;
+}
 .row1{color:#FFFFFF; background-color:rgba(0,0,0,.6);}
 .row2{color:#FFFFFF; background-color:#222222;}
-.row3{color:#7A7A7A; background-color:#FFFFFF;}
-.row4{color:#7A7A7A; background-color:#F7F7F7;}
+.row3{color:#3d3d3d; background-color:#FFFFFF;}
+.row4{color:#3d3d3d; background-color:#F7F7F7;}
 .row5, .row5 a{color:#7A7A7A; background-color:#FFFFFF;}
 
 .row3 .heading, .row4 .heading{color:#3d3d3d;}
@@ -300,8 +304,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#04DEE0;}
 #header #logo a{color:inherit;}
 
 
-/* Page Intro */
-#pageintro{color:#FFFFFF;}
+
 
 
 /* Content Area */
@@ -375,6 +378,10 @@ table a, #comments a{background-color:inherit;}
 --------------------------------------------------------------------------------------------------------------- */
 @media screen and (min-width:978px){
 	.hoc{max-width:978px;}
+	.bgded{max-width:1950px;
+	min-height: 855px ;}
+	.bgded2{max-width:1950px;
+		min-height:auto ;}
 }
 
 
@@ -444,4 +451,15 @@ table a, #comments a{background-color:inherit;}
 
 	.font-x2{font-size:1.4rem;}
 	.font-x3{font-size:1.6rem;}
+}
+
+.fixed-top{
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+	background-color: #FFFFFF;
+}
+
+.projects{
+padding-top: 200px;;
 }
