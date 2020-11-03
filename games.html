@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <title>Ana Geek | Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+
+    <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+</head>
+
+<body>
+    <!-- Top Background Image Wrapper -->
+    <div class="bgded2 hoc ">
+        <div class="fixed-top ">
+            <div class="wrapper ">
+                <div id="topbar" class="hoc clear">
+                    <div class="fl_left">
+                        <ul class="nospace">
+                            <li><i class="fa fa-envelope"></i> alcneiva@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="fl_right">
+                        <ul class="nospace">
+                            <li></li>
+                            <li><a href="https://www.instagram.com/ana.geek/" title="Instagram"><i
+                                        class="fa fa-lg fa-instagram"></i></a></li>
+                            <li><a href="https://twitter.com/anageekdev " title="Twitter"><i
+                                        class="fa fa-lg fa-twitter"></i></a></li>
+                            <li><a href="https://www.youtube.com/anageek" title="Youtube"><i
+                                        class="fa fa-lg fa-youtube-play"></i></a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/anageek/" title="Youtube"><i
+                                        class="fa fa-lg fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper row1 ">
+                <header id="header" class="hoc clear">
+                    <div id="logo" class="fl_left">
+                        <h1><a href="index.html"><img src="images/logo-small-white.png" alt=""></a></h1>
+                    </div>
+                    <nav id="mainav" class="fl_right">
+                        <ul class="clear">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a class="drop" href="">Portfolio</a>
+                                <ul>
+                                    <li><a href="games.html">Games</a></li>
+                                    <li><a href="designer.html">Designer</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </div>
+
+        </div>
+
+        <!-- Images Slide-->
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="10000">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/backgrounds/placetable.gif" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/backgrounds/craftString.gif" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/backgrounds/worktableUI.gif" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </div>
+    <!--Page content -->
+    <div class="container hoc p-3">
+        <h2> Projects</h2>
+        <div class="row">
+            <!-- Sidebar Projects -->
+            <div class="col-3 ">
+                <div class="nav flex-column nav-pills center " id="v-pills-tab" role="tablist"
+                    aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+                        aria-controls="v-pills-home" aria-selected="true">
+                        <p>Naufrago</p>
+                        <img src="images/projects/Naufrago/thumb.png"></img>
+                    </a>
+                    <a class="nav-link " id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                        aria-controls="v-pills-profile" aria-selected="false">
+                        <p> Escape from Coronga</p>
+                        <img src="images/projects/Escape from Coronga/cover.png"></img>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-9">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                        aria-labelledby="v-pills-home-tab">
+
+
+
+
+
+                        <!-- Abas nav -->
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                    aria-controls="home" aria-selected="true">Overview</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#perfil" role="tab"
+                                    aria-controls="profile" aria-selected="false">3D</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab"
+                                    aria-controls="messages" aria-selected="false">UX/UI</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab"
+                                    aria-controls="settings" aria-selected="false">Mechanics</a>
+                            </li>
+                        </ul>
+
+                        <!-- Painel de abas -->
+                        <div class="tab-content">
+                            <div class="tab-pane active pt-3" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <p>
+                                    <b>Naufrago</b> is Third person and First person perspective game.
+                                </p>
+                                <p>
+                                    The idea is a survival game that goes beyond that, the Player can interact with
+                                    animals in an unusual way, making trades for items.
+                                </p>
+                                <a class="btn" href="https://anageek.github.io/naufrago/">Chek it out</a>
+                            </div>
+                            <div class="tab-pane" id="perfil" role="tabpanel" aria-labelledby="profile-tab">
+                                <P>
+                                    Examples 3D
+                                </P>
+                            </div>
+                            <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+                                <P>
+                                    Examples UI
+                                </P>
+                            </div>
+                            <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                                <P>
+                                    Examples mechanics
+                                </P>
+
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                        aria-labelledby="v-pills-profile-tab">Escape from conronga content</div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    </div>
+    <div class="wrapper row2 " style="background-color: black;">
+        <section class="hoc cta clear">
+            <div class="sectiontitle">
+                <h6 class="heading">Contact Me</h6>
+                <p><i class="fa fa-envelope"></i> alcneiva@gmail.com</p>
+                <ul class="faico clear">
+
+
+                    <li><a href="https://www.instagram.com/ana.geek/" title="Instagram"><i
+                                class="fa fa-lg fa-instagram"></i></a>
+                    </li>
+                    <li><a href="https://twitter.com/anageekdev " title="Twitter"><i
+                                class="fa fa-lg fa-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com/anageek" title="Youtube"><i
+                                class="fa fa-lg fa-youtube-play"></i></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/in/anageek/" title="Youtube"><i
+                                class="fa fa-lg fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+    </div>
+
+
+    <div class="wrapper row5">
+        <div id="copyright" class="hoc clear">
+            <p class="fl_left">Copyright &copy; 2020 - All Rights Reserved - <a href="#">Ana Geek</a></p>
+
+        </div>
+    </div>
+
+    <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+
+
+
+
+</body>
+
+</html>

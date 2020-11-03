@@ -36,7 +36,7 @@ File: Layout CSS
 --------------------------------------------------------------------------------------------------------------- */
 #header{}
 
-#header #logo{margin:15px 0;}
+#header #logo{margin: 0;}
 #header #logo h1{margin:0; padding:0; font-size:15px;}
 
 
@@ -145,7 +145,7 @@ This gives a smooth transition to "ALL" elements used in the layout - other than
 If you don't want it to fade all elements, you have to list the ones you want to be faded individually
 Delete it completely to stop fading
 --------------------------------------------------------------------------------------------------------------- */
-*, *::before, *::after{transition:all .3s ease-in-out;}
+*, *::before, *::after{transition:all 0.6s ease-in-out;}
 #mainav form *{transition:none !important;}
 
 
@@ -160,15 +160,15 @@ Delete it completely to stop fading
 --------------------------------------------------------------------------------------------------------------- */
 nav ul, nav ol{margin:0; padding:0; list-style:none;}
 
-#mainav, #breadcrumb, .sidebar nav{line-height:normal;}
-#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:18px; line-height:20px;}
+#mainav, #breadcrumb, .sidebar nav{line-height:50%;}
+#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:18px; line-height:50%;}
 
 /* Top Navigation */
 #mainav{}
 #mainav ul{text-transform:uppercase; font-size: 15px;}
 #mainav ul ul{z-index:9999; position:absolute; width:180px; text-transform:none;}
 #mainav ul ul ul{left:180px; top:0;}
-#mainav li{display:inline-block; position:relative; margin:0 15px 0 0; padding:0 10px;}
+#mainav li{display:inline-block; position:relative; margin:0 0 0 0; padding:0 10px;}
 #mainav li:last-child{margin-right:0;}
 #mainav li li{width:100%; margin:0;}
 #mainav li a{display:block; padding:30px 0;}
@@ -200,11 +200,11 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 .sidebar nav{display:block; width:100%;}
 .sidebar nav li{margin:0 0 3px 0; padding:0;}
 .sidebar nav a{display:block; position:relative; margin:0; padding:5px 10px 5px 15px; text-decoration:none; border:solid; border-width:0 0 1px 0;}
-.sidebar nav a::after{top:9px; left:5px; content:"\f101";}
+.sidebar nav a::after{top:5px; left:0px; padding: 15; content:"\f22d";}
 .sidebar nav ul ul a{padding-left:35px;}
-.sidebar nav ul ul a::after{left:25px;}
+.sidebar nav ul ul a::after{left:20px;}
 .sidebar nav ul ul ul a{padding-left:55px;}
-.sidebar nav ul ul ul a::after{left:45px;}
+.sidebar nav ul ul ul a::after{left:40px;}
 
 /* Pagination */
 .pagination{display:block; width:100%; text-align:center; clear:both;}
@@ -263,7 +263,7 @@ td{border-width:0 1px;}
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
 body{color:#272727; background-color:#FFFFFF;}
-a{color:#04DEE0;}
+a{color:#048fe0; font-weight: 500;}
 a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
 hr, .borderedbox{border-color:#D7D7D7;}
 label span{color:#FF0000; background-color:inherit;}
@@ -379,7 +379,7 @@ table a, #comments a{background-color:inherit;}
 @media screen and (min-width:978px){
 	.hoc{max-width:978px;}
 	.bgded{max-width:1950px;
-	min-height: 855px ;}
+	min-height: 750px ;}
 	.bgded2{max-width:1950px;
 		min-height:auto ;}
 }
@@ -422,7 +422,7 @@ table a, #comments a{background-color:inherit;}
 	#topbar > div:first-of-type ul{margin:0 0 15px 0;}
 
 	#header{text-align:center;}
-	#header #logo{margin:0 0 15px 0;}
+	#header #logo{margin:0;text-align:center;}
 
 	#pageintro article{max-width:none; text-align:left;}
 	#pageintro .heading{font-size:25px;}
@@ -461,5 +461,33 @@ table a, #comments a{background-color:inherit;}
 }
 
 .projects{
-padding-top: 200px;;
+padding-top: 140px;;
+}
+.carousel-caption{
+	background-color:rgba(0,0,0,.75);
+	bottom: 0px; 
+	width: 100%;
+	height: 100px;
+	left: 0mm;
+}
+.carousel-caption h5{
+	font-size: 20px;
+}
+.carousel-caption p{
+	font-size: 14px;
+}
+.carousel-item{
+	max-height:760px; 
+}
+.carousel-indicators{
+	margin-bottom: 0px;
+}
+.nav a{
+	background-color: rgba(0,0,0,.1);
+}
+.nav-link.active{
+	background-color: rgba(255,255,255,.2); !important;
+}
+.nav-item {
+	padding-left: 3px;
 }
