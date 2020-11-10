@@ -9,7 +9,7 @@ File: Framework CSS
 */
 
 html{overflow-y:scroll; overflow-x:hidden;}
-html, body{margin:0; padding:0; font-size:14px; line-height:1.6em;}
+html, body{margin:0; padding:0; font-size:14px; }
 
 *, *::before, *::after{box-sizing:border-box;}
 
@@ -20,6 +20,8 @@ html, body{margin:0; padding:0; font-size:14px; line-height:1.6em;}
 .capitalise{text-transform:capitalize;}
 .hidden{display:none;}
 .nospace{margin:0; padding:0; list-style:none;}
+.nospace a{color: rgb(0, 0, 0); }
+.nospace a:hover{color: rgb(10, 88, 255); }
 .block{display:block;}
 .justified{text-align:justify;}
 .inline *{display:inline-block;}
@@ -49,12 +51,18 @@ a{outline:none; text-decoration:none;}
 img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; line-height:normal; vertical-align:middle;}
 .imgl{margin:0 15px 10px 0; clear:left;}
 .imgr{margin:0 0 10px 15px; clear:right;}
-.imgover{display:inline-block; position:relative; max-width:100%;}
+.imgover{display:inline-block; position:relative; max-width:100%; }
 .imgover::before, .imgover::after{display:block; position:absolute; content:""; text-align:center; opacity:0;}
-.imgover::before{top:0; right:0; bottom:0; left:0;}
+.imgover::before{top:0; right:0; bottom:0; left:0; }
 .imgover::after{top:50%; left:50%; width:50px; height:50px; line-height:50px; margin:-25px 0 0 -25px; font-family:"FontAwesome"; font-size:28px;}
-.imgover:hover::before, .imgover:hover::after{opacity:1;}
-
+.imgover:hover::before, .imgover:hover::after{opacity:1;border-width: 0px;}
+.imgover img {
+    border-radius: 10px; 
+    width: 400px;
+    border-style: solid; 
+    border-top-color:rgba(255, 255, 255, 0.568);
+    border-width: 1px;
+}
 
 /* Fonts
 --------------------------------------------------------------------------------------------------------------- */
@@ -73,7 +81,7 @@ label{margin-bottom:5px;}
 
 /* Generalise
 --------------------------------------------------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6, .heading{margin:0 0 5px 0; font-size:3rem; line-height:normal; font-weight:normal; text-transform:capitalize; }
+h1, h2, h3, h4, h5, h6, .heading{font-size: 28px; margin:0 0 5px 0; line-height:normal; font-weight:normal; text-transform:capitalize; }
 .heading.nospace{margin:0;}
 
 address{font-style:normal; font-weight:normal;}

@@ -23,7 +23,7 @@ File: Layout CSS
 
 /* Top Bar
 --------------------------------------------------------------------------------------------------------------- */
-#topbar{padding:8px 0; font-size:1rem; text-transform:uppercase;}
+#topbar{padding:1px 0; font-size:.9rem; text-transform:uppercase;}
 
 #topbar *{margin:0;}
 #topbar ul li{display:inline-block; margin-right:15px;}
@@ -34,11 +34,9 @@ File: Layout CSS
 
 /* Header
 --------------------------------------------------------------------------------------------------------------- */
-#header{}
-
 #header #logo{margin: 0;}
 #header #logo h1{margin:0; padding:0; font-size:15px;}
-
+#header #logo a{height:20px; text-align:center;}
 
 /* Page Intro
 --------------------------------------------------------------------------------------------------------------- */
@@ -145,7 +143,7 @@ This gives a smooth transition to "ALL" elements used in the layout - other than
 If you don't want it to fade all elements, you have to list the ones you want to be faded individually
 Delete it completely to stop fading
 --------------------------------------------------------------------------------------------------------------- */
-*, *::before, *::after{transition:all 0.6s ease-in-out;}
+/* *, *::before, *::after{transition:all 0.6s ease-in-out;} */
 #mainav form *{transition:none !important;}
 
 
@@ -160,23 +158,23 @@ Delete it completely to stop fading
 --------------------------------------------------------------------------------------------------------------- */
 nav ul, nav ol{margin:0; padding:0; list-style:none;}
 
-#mainav, #breadcrumb, .sidebar nav{line-height:50%;}
+#mainav, #breadcrumb, .sidebar nav{line-height:100%;}
 #mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:18px; line-height:50%;}
 
 /* Top Navigation */
-#mainav{}
+#mainav{text-align: center; margin-top: 5.5px;}
 #mainav ul{text-transform:uppercase; font-size: 15px;}
 #mainav ul ul{z-index:9999; position:absolute; width:180px; text-transform:none;}
 #mainav ul ul ul{left:180px; top:0;}
 #mainav li{display:inline-block; position:relative; margin:0 0 0 0; padding:0 10px;}
 #mainav li:last-child{margin-right:0;}
 #mainav li li{width:100%; margin:0;}
-#mainav li a{display:block; padding:30px 0;}
+#mainav li a{display:block; padding:20px 0;}
 #mainav li li a{border:solid; border-width:0 0 1px 0;}
 #mainav .drop{padding-left:15px;}
-#mainav li li a, #mainav li li .drop{display:block; margin:0; padding:10px 15px;}
+#mainav li li a, #mainav li li .drop{display:block; margin:0; padding:15px 15px; text-align: left;}
 #mainav .drop::after, #mainav li li .drop::after{content:"\f0d7";}
-#mainav .drop::after{top:35px; left:5px;}
+#mainav .drop::after{top:25px; left:5px;}
 #mainav li li .drop::after{top:15px; left:5px;}
 #mainav ul ul{visibility:hidden; opacity:0;}
 #mainav ul li:hover > ul{visibility:visible; opacity:1;}
@@ -196,21 +194,6 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 #breadcrumb li:last-child a::after{display:none;}
 #breadcrumb .heading{margin:0; font-size:1.6rem;}
 
-/* Sidebar Navigation */
-.sidebar nav{display:block; width:100%;}
-.sidebar nav li{margin:0 0 3px 0; padding:0;}
-.sidebar nav a{display:block; position:relative; margin:0; padding:5px 10px 5px 15px; text-decoration:none; border:solid; border-width:0 0 1px 0;}
-.sidebar nav a::after{top:5px; left:0px; padding: 15; content:"\f22d";}
-.sidebar nav ul ul a{padding-left:35px;}
-.sidebar nav ul ul a::after{left:20px;}
-.sidebar nav ul ul ul a{padding-left:55px;}
-.sidebar nav ul ul ul a::after{left:40px;}
-
-/* Pagination */
-.pagination{display:block; width:100%; text-align:center; clear:both;}
-.pagination li{display:inline-block; margin:0 2px 0 0;}
-.pagination li:last-child{margin-right:0;}
-.pagination a, .pagination strong{display:block; padding:8px 11px; border:1px solid; background-clip:padding-box; font-weight:normal;}
 
 /* Back to Top */
 #backtotop{z-index:999; display:inline-block; position:fixed; visibility:hidden; bottom:20px; right:20px; width:36px; height:36px; line-height:36px; font-size:16px; text-align:center; opacity:.2;}
@@ -262,8 +245,7 @@ td{border-width:0 1px;}
 
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
-body{color:#272727; background-color:#FFFFFF;}
-a{color:#048fe0; font-weight: 500;}
+
 a:active, a:focus{background:transparent;}/* IE10 + 11 Bugfix - prevents grey background */
 hr, .borderedbox{border-color:#D7D7D7;}
 label span{color:#FF0000; background-color:inherit;}
@@ -276,8 +258,8 @@ input:focus, textarea:focus, *:required:focus{border-color:#04DEE0;}
 .btn, .btn.inverse:hover{color:#FFFFFF; background-color:#00e485; border-color: #00e485; border-radius: 10px;}
 .btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
 
-.imgover:hover::before{background:rgba(0,0,0,.55);}
-.imgover, .imgover:hover::after{color:#FFFFFF;}
+.imgover:hover::before{background:rgba(0,0,0,.55); border-radius: 10px;border-width: 0px;}
+.imgover, .imgover:hover::after{color:#FFFFFF; border-radius: 10px; border-width: 0px;}
 
 
 /* Rows */
@@ -285,8 +267,12 @@ input:focus, textarea:focus, *:required:focus{border-color:#04DEE0;}
 .row1{
 	position:absolute;
 	top: 1; }
+.row1:hover {background-color:rgba(0,0,0,.9);
+
+}	
 .row0 a{color:#FFFFFF;
 }
+
 .row1{color:#FFFFFF; background-color:rgba(0,0,0,.6);}
 .row2{color:#FFFFFF; background-color:#222222;}
 .row3{color:#3d3d3d; background-color:#FFFFFF;}
@@ -336,7 +322,7 @@ if your not worried about it, simply delete it, as the placeholder will take on 
 
 /* Navigation */
 #mainav li a{color:inherit;}
-#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#04DEE0; background-color:inherit;}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#04DEE0; background-color:inherit; text-decoration:none;}
 #mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(0,0,0,.6); border-color:rgba(0,0,0,.3);}
 #mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#04DEE0;}
 #mainav form select{color:#FFFFFF; background-color:#000000; border-color:rgba(255,255,255,.3);}
@@ -388,14 +374,11 @@ table a, #comments a{background-color:inherit;}
 /* Mobile Devices
 --------------------------------------------------------------------------------------------------------------- */
 @media screen and (max-width:900px){
-	.hoc{max-width:90%;}
+	.hoc{max-width:100%;}
 
 	#topbar{}
 
-	#header{padding:0;}
-	#header #logo{}
-
-	#mainav{}
+	
 	#mainav ul{display:none;}
 	#mainav form{display:block;}
 
@@ -405,7 +388,7 @@ table a, #comments a{background-color:inherit;}
 	#comments input[type="reset"]{margin-top:10px;}
 	.pagination li{display:inline-block; margin:0 5px 5px 0;}
 
-	#footer{}
+
 
 	#copyright{}
 	#copyright p:first-of-type{margin-bottom:10px;}
@@ -418,8 +401,8 @@ table a, #comments a{background-color:inherit;}
 	.group .group > *:last-child, .clear .clear > *:last-child, .clear .group > *:last-child, .group .clear > *:last-child{margin-bottom:0;}/* Experimental - Needs more testing in different situations, stops double margin when stacking */
 	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
 
-	#topbar{padding-top:15px; text-align:center;}
-	#topbar > div:first-of-type ul{margin:0 0 15px 0;}
+	#topbar{text-align:center;}
+	#topbar > div:first-of-type ul{}
 
 	#header{text-align:center;}
 	#header #logo{margin:0;text-align:center;}
@@ -456,12 +439,13 @@ table a, #comments a{background-color:inherit;}
 .fixed-top{
 	position: fixed;
 	width: 100%;
-	z-index: 9999;
+	z-index: 999;
 	background-color: #FFFFFF;
 }
 
 .projects{
-padding-top: 140px;;
+	padding-top: 120px;
+	padding-bottom: 50px;
 }
 .carousel-caption{
 	background-color:rgba(0,0,0,.75);
@@ -486,7 +470,8 @@ padding-top: 140px;;
 
 
 .nav-link.active{
-	background-color: rgba(255,255,255,.2); !important;
+	background-color: rgba(255,255,255,.2); 
+
 }
 .nav-item {
 	padding-left: 3px;
@@ -550,6 +535,11 @@ padding-top: 140px;;
 	
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-	
-    background-color: #03030349;
+	border-color: #0091ffb4;
+	border-width:1px;
+	background-color: #3183ff49;
+	color: #272727;
+}
+.nav-tabs .nav-link{
+	background-color: #a7a7a7a2;
 }
