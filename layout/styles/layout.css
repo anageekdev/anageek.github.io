@@ -269,7 +269,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#04DEE0;}
 	top: 1; }
 .row1:hover {background-color:rgba(0,0,0,.9);
 
-}	
+}
 .row0 a{color:#FFFFFF;
 }
 
@@ -378,8 +378,8 @@ table a, #comments a{background-color:inherit;}
 
 	#topbar{}
 
-	
-	#mainav ul{display:none;}
+
+	/*#mainav ul{display:none;}*/
 	#mainav form{display:block;}
 
 	#breadcrumb{}
@@ -396,6 +396,9 @@ table a, #comments a{background-color:inherit;}
 
 
 @media screen and (max-width:750px){
+	#carouselExampleCaptions {
+		padding-top: 104px;
+	}
 	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
 	.fl_left, .fl_right{display:block; float:none;}
 	.group .group > *:last-child, .clear .clear > *:last-child, .clear .group > *:last-child, .group .clear > *:last-child{margin-bottom:0;}/* Experimental - Needs more testing in different situations, stops double margin when stacking */
@@ -407,8 +410,24 @@ table a, #comments a{background-color:inherit;}
 	#header{text-align:center;}
 	#header #logo{margin:0;text-align:center;}
 
-	#pageintro article{max-width:none; text-align:left;}
+	/*#pageintro article{max-width:none; text-align:left;}*/
 	#pageintro .heading{font-size:25px;}
+	#pageintro .group {
+		display: flex;
+		flex-direction: column;
+	}
+
+	#pageintro .group > div:first-child {
+		order: 2;
+	}
+
+	#pageintro .group > div:nth-child(2) {
+		order: 1;
+	}
+
+	#pageintro .group > p:last-child {
+		order: 3;
+	}
 
 	.sectiontitle{max-width:none;}
 
@@ -449,7 +468,7 @@ table a, #comments a{background-color:inherit;}
 }
 .carousel-caption{
 	background-color:rgba(0,0,0,.75);
-	bottom: 0px; 
+	bottom: 0px;
 	width: 100%;
 	height: 100px;
 	left: 0mm;
@@ -461,7 +480,7 @@ table a, #comments a{background-color:inherit;}
 	font-size: 14px;
 }
 .carousel-item{
-	max-height:760px; 
+	max-height:760px;
 }
 .carousel-indicators{
 	margin-bottom: 0px;
@@ -470,17 +489,17 @@ table a, #comments a{background-color:inherit;}
 
 
 .nav-link.active{
-	background-color: rgba(255,255,255,.2); 
+	background-color: rgba(255,255,255,.2);
 
 }
 .nav-item {
 	padding-left: 3px;
-	
+
 }
 .nav-item p {
 	padding: 10px 10px 0px ;
 	width: 250px;
-	
+
 }
 .nav-item img {
 	width:100%;
@@ -496,14 +515,14 @@ table a, #comments a{background-color:inherit;}
 	overflow-x:auto;
     overflow-y:hidden;
 	flex-wrap:nowrap;
-	
+
 }
 
 
 .singleinfostabs {
     margin-bottom: 20px;
 	width: 100%;
-	
+
 }
 .singleinfostabs > ul {
     overflow-x: auto;
@@ -522,8 +541,8 @@ table a, #comments a{background-color:inherit;}
     border-radius: 4px;
     padding: 4px 10px;
 	color: rgb(48, 48, 48) ;
-	
-	
+
+
 }
 .singleinfostabs .nav-item .nav-link{
 	border-width:1px;
@@ -531,8 +550,8 @@ table a, #comments a{background-color:inherit;}
 	border-style: solid ;
 	border-color: #869dafb4;
 	padding:0;
-	
-	
+
+
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
 	border-color: #0091ffb4;

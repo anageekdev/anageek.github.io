@@ -39,7 +39,7 @@ html, body{margin:0; padding:0; font-size:14px; }
 blockquote{display:block; position:relative; width:100%; margin:0; padding:30px; line-height:1.4; z-index:1;}
 blockquote::before{display:block; position:absolute; top:0; left:0; font-family:"FontAwesome"; font-size:60px; line-height:60px; content:"\f10d"; z-index:-1;}
 
-.clear, .group{display:block;}
+.clear, .group{display:block; font-family: 'Poppins', sans-serif;}
 .clear::before, .clear::after, .group::before, .group::after{display:table; content:"";}
 .clear, .clear::after, .group, .group::after{clear:both;}
 
@@ -57,9 +57,9 @@ img{width:auto; max-width:100%; height:auto; margin:0; padding:0; border:none; l
 .imgover::after{top:50%; left:50%; width:50px; height:50px; line-height:50px; margin:-25px 0 0 -25px; font-family:"FontAwesome"; font-size:28px;}
 .imgover:hover::before, .imgover:hover::after{opacity:1;border-width: 0px;}
 .imgover img {
-    border-radius: 10px; 
+    border-radius: 10px;
     width: 400px;
-    border-style: solid; 
+    border-style: solid;
     border-top-color:rgba(255, 255, 255, 0.568);
     border-width: 1px;
 }
