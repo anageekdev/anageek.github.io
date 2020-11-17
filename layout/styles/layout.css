@@ -1,42 +1,262 @@
 @charset "utf-8";
-/*
-Template Name: Oleald
-Author: <a href="https://www.os-templates.com/">OS Templates</a>
-Author URI: https://www.os-templates.com/
-Licence: Free to use under our free template licence terms
-Licence URI: https://www.os-templates.com/template-terms
-File: Layout CSS
-*/
 
 @import url("font-awesome.min.css");
 @import url("framework.css");
 
-/* Rows
---------------------------------------------------------------------------------------------------------------- */
-.row0, .row0 a{}
-.row1, .row1 a{}
-.row2, .row2 a{}
-.row3, .row3 a{}
-.row4, .row4 a{}
-.row5, .row5 a{}
+/* Background Image-----------------------------------------------------------------------------------------------------------------------------------------*/
+.bgded, .bgded2{
+	background-position:center center; 
+	background-repeat:no-repeat;
+	background-size:cover;
+	
+}
+.hoc{
+	display: block;
+	margin:0 auto;
+}
+.fixed-top{
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	background-color: #FFFFFF;
+}
 
+/*contact and Menu  ----------------------------------------------------------------------------------------------------------- */
+.wrapper{
+	display:block; 
+	width: 100%;
+	margin:0; 
+	padding:0; 
+	text-align:left; 
+	word-wrap:break-word;}
 
-/* Top Bar
---------------------------------------------------------------------------------------------------------------- */
+/* Top Bar --------------------------------------------------------------------------------------------------------------- */
 #topbar{padding:1px 0; font-size:.9rem; text-transform:uppercase;}
 
-#topbar *{margin:0;}
 #topbar ul li{display:inline-block; margin-right:15px;}
 #topbar ul li:last-child{margin-right:0; padding-right:0; border-right:none;}
 #topbar i{line-height:normal;}
 #topbar > div:first-of-type ul li i{margin-right:5px;}
+#topbar ul li:first-child a{color:#04DEE0;}
 
+.clear, .group{display:block; font-family: 'Poppins', sans-serif;}
+.clear::before, .clear::after, .group::before, .group::after{display:table; content:"";}
+.clear, .clear::after, .group, .group::after{clear:both;}
 
-/* Header
+.fl_left, .imgl{float:left;}
+
+.nospace{margin:0; padding:0; list-style:none;}
+.nospace a{color: rgb(0, 0, 0); }
+.nospace a:hover{color:#04DEE0 }
+
+/* Rows
+--------------------------------------------------------------------------------------------------------------- */
+/* Menu Background */
+.row1{ 
+	position:absolute;
+	top: 1;
+	color:#FFFFFF;
+	background-color:rgba(0,0,0,.6); 
+
+}
+.row1:hover {
+	background-color:rgba(0,0,0,.9);
+}
+
+/* Header Menu
 --------------------------------------------------------------------------------------------------------------- */
 #header #logo{margin: 0;}
 #header #logo h1{margin:0; padding:0; font-size:15px;}
 #header #logo a{height:20px; text-align:center;}
+
+
+/* Navigation
+--------------------------------------------------------------------------------------------------------------- */
+nav ul, nav ol{margin:0; padding:0; list-style:none;}
+#mainav form *{transition:none !important;}
+#mainav, #breadcrumb, .sidebar nav{line-height:100%;}
+#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:18px; line-height:50%;}
+
+/* Top Navigation */
+#mainav{text-align: center; margin-top: 5.5px;}
+#mainav ul{text-transform:uppercase; font-size: 15px;}
+#mainav ul ul{z-index:9999; position:absolute; width:180px; text-transform:none;}
+#mainav ul ul ul{left:180px; top:0;}
+#mainav li{display:inline-block; position:relative; margin:0 0 0 0; padding:0 10px;}
+#mainav li:last-child{margin-right:0;}
+#mainav li li{width:100%; margin:0;}
+#mainav li a{display:block; padding:20px 0;}
+#mainav li li a{border:solid; border-width:0 0 1px 0;}
+#mainav .drop{padding-left:15px;}
+#mainav li li a, #mainav li li .drop{display:block; margin:0; padding:15px 15px; text-align: left;}
+#mainav .drop::after, #mainav li li .drop::after{content:"\f0d7";}
+#mainav .drop::after{top:25px; left:5px;}
+#mainav li li .drop::after{top:15px; left:5px;}
+#mainav ul ul{visibility:hidden; opacity:0;}
+#mainav ul li:hover > ul{visibility:visible; opacity:1;}
+
+#mainav form{display:none; margin:0; padding:0;}
+#mainav form select, #mainav form select option{display:block; cursor:pointer; outline:none;}
+#mainav form select{width:100%; padding:5px; border:1px solid;}
+#mainav form select option{margin:5px; padding:0; border:none;}
+
+
+
+
+
+
+
+
+
+
+
+.row2{
+	background-color:#ffffff;
+}
+.row2 a{
+	font-weight: 700;
+}
+.row2 h2{
+	color: #000000;
+}
+
+
+.row3{
+	color:#ffffff;
+	background-color:black;
+}
+.row4{
+	color:#3d3d3d; 
+	font-weight: 500;
+	background-color:#F7F7F7;
+}
+
+
+.row3 a{
+	font-size: 18px;
+	font-weight: 900;
+}
+
+.projects{
+	padding-top: 120px;
+	padding-bottom: 50px;
+	color: #ffffff;
+}
+
+
+
+h1 {
+    font-size: 30px; 
+    margin:10px 0; 
+    line-height:normal; 
+    font-weight:normal; 
+    text-transform:capitalize; 
+}
+
+.bgded2 h2{
+    color: #fff ;
+    font-size: 28px; 
+    margin:10px 0; 
+    line-height:normal; 
+    font-weight:normal; 
+    text-transform:capitalize; 
+}
+.bgded2 h3{
+    color: #fff ;
+    font-size: 20px; 
+    margin:10px 0; 
+    line-height:normal; 
+    font-weight:normal; 
+    text-transform:capitalize; 
+}
+
+h1,h2,h3,h4,h5,h6 .heading.nospace{margin:0;}
+
+#about {
+	margin-top: 100px;
+	font-size: 20px; 
+}#about h2{
+    color: #000 ;
+    font-size: 28px; 
+    margin:10px 0; 
+    line-height:normal; 
+    font-weight:normal; 
+    text-transform:capitalize; 
+}
+.profileImg{
+	width: 300px;
+	margin: 20px;
+	border-radius: 50%;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: cornflowerblue;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+.contact .profileImg{
+	width: 300px;
+	margin: 20px;
+	border-radius: 50%;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: cornflowerblue;
+	box-shadow: 0 4px 8px 0 rgba(0, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.3);
+}
+
+.imgover{
+	display:inline-block; 
+	position:relative; 
+	max-width:100%; 
+}
+.imgover::before, .imgover::after{
+	display:block; 
+	position:absolute; 
+	content:""; 
+	text-align:center; 
+	opacity:0;
+}
+.imgover::before{
+	top:0; 
+	right:0; 
+	bottom:0; 
+	left:0; 
+}
+.imgover::after{
+	top:50%; 
+	left:50%; 
+	width:50px; 
+	height:50px; 
+	line-height:50px; 
+	margin:-25px 0 0 -25px; 
+	font-family:"FontAwesome"; 
+	font-size:28px;
+}
+.imgover:hover::before, .imgover:hover::after{opacity:1;border-width: 0px;}
+.imgover img {
+	border-radius: 3px;
+	width: 400px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+	
+}
+.imgover:hover::before{
+	background:rgba(100, 232, 255, 0.4); 
+	border-radius: 3px;
+	border-width: 0px;
+}
+.imgover, .imgover:hover::after{
+	
+}
+img{
+	width:auto; 
+	max-width:100%; 
+	height:auto; 
+	margin:0; 
+	padding:0; 
+	border:none; 
+	line-height:normal; 
+	vertical-align:middle;
+}
+
 
 /* Page Intro
 --------------------------------------------------------------------------------------------------------------- */
@@ -144,7 +364,7 @@ If you don't want it to fade all elements, you have to list the ones you want to
 Delete it completely to stop fading
 --------------------------------------------------------------------------------------------------------------- */
 /* *, *::before, *::after{transition:all 0.6s ease-in-out;} */
-#mainav form *{transition:none !important;}
+
 
 
 /* ------------------------------------------------------------------------------------------------------------ */
@@ -154,35 +374,7 @@ Delete it completely to stop fading
 /* ------------------------------------------------------------------------------------------------------------ */
 
 
-/* Navigation
---------------------------------------------------------------------------------------------------------------- */
-nav ul, nav ol{margin:0; padding:0; list-style:none;}
 
-#mainav, #breadcrumb, .sidebar nav{line-height:100%;}
-#mainav .drop::after, #mainav li li .drop::after, #breadcrumb li a::after, .sidebar nav a::after{position:absolute; font-family:"FontAwesome"; font-size:18px; line-height:50%;}
-
-/* Top Navigation */
-#mainav{text-align: center; margin-top: 5.5px;}
-#mainav ul{text-transform:uppercase; font-size: 15px;}
-#mainav ul ul{z-index:9999; position:absolute; width:180px; text-transform:none;}
-#mainav ul ul ul{left:180px; top:0;}
-#mainav li{display:inline-block; position:relative; margin:0 0 0 0; padding:0 10px;}
-#mainav li:last-child{margin-right:0;}
-#mainav li li{width:100%; margin:0;}
-#mainav li a{display:block; padding:20px 0;}
-#mainav li li a{border:solid; border-width:0 0 1px 0;}
-#mainav .drop{padding-left:15px;}
-#mainav li li a, #mainav li li .drop{display:block; margin:0; padding:15px 15px; text-align: left;}
-#mainav .drop::after, #mainav li li .drop::after{content:"\f0d7";}
-#mainav .drop::after{top:25px; left:5px;}
-#mainav li li .drop::after{top:15px; left:5px;}
-#mainav ul ul{visibility:hidden; opacity:0;}
-#mainav ul li:hover > ul{visibility:visible; opacity:1;}
-
-#mainav form{display:none; margin:0; padding:0;}
-#mainav form select, #mainav form select option{display:block; cursor:pointer; outline:none;}
-#mainav form select{width:100%; padding:5px; border:1px solid;}
-#mainav form select option{margin:5px; padding:0; border:none;}
 
 /* Breadcrumb */
 #breadcrumb{padding:120px 0 30px;}
@@ -258,36 +450,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#04DEE0;}
 .btn, .btn.inverse:hover{color:#FFFFFF; background-color:#00e485; border-color: #00e485; border-radius: 10px;}
 .btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
 
-.imgover:hover::before{background:rgba(0,0,0,.55); border-radius: 10px;border-width: 0px;}
-.imgover, .imgover:hover::after{color:#FFFFFF; border-radius: 10px; border-width: 0px;}
 
-
-/* Rows */
-
-.row1{
-	position:absolute;
-	top: 1; }
-.row1:hover {background-color:rgba(0,0,0,.9);
-
-}
-.row0 a{color:#FFFFFF;
-}
-
-.row1{color:#FFFFFF; background-color:rgba(0,0,0,.6);}
-.row2{color:#FFFFFF; background-color:#222222;}
-.row3{color:#3d3d3d; background-color:#FFFFFF;}
-.row4{color:#3d3d3d; background-color:#F7F7F7;}
-.row5, .row5 a{color:#7A7A7A; background-color:#FFFFFF;}
-
-.row3 .heading, .row4 .heading{color:#3d3d3d;}
-
-
-/* Top Bar */
-#topbar ul li:first-child a{color:#04DEE0;}
-
-
-/* Header */
-#header #logo a{color:inherit;}
 
 
 
@@ -321,10 +484,10 @@ if your not worried about it, simply delete it, as the placeholder will take on 
 
 
 /* Navigation */
-#mainav li a{color:inherit;}
+#mainav li a{color:inherit; font-weight: 600;}
 #mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#04DEE0; background-color:inherit; text-decoration:none;}
-#mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(0,0,0,.6); border-color:rgba(0,0,0,.3);}
-#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#04DEE0;}
+#mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(0,0,0,.9); border-color:rgba(0,0,0,.3);}
+#mainav li li:hover > a, #mainav .active .active > a{color:#000; font-weight: 600; background-color:#04DEE0;}
 #mainav form select{color:#FFFFFF; background-color:#000000; border-color:rgba(255,255,255,.3);}
 
 #breadcrumb a{color:inherit; background-color:inherit;}
@@ -375,9 +538,6 @@ table a, #comments a{background-color:inherit;}
 --------------------------------------------------------------------------------------------------------------- */
 @media screen and (max-width:900px){
 	.hoc{max-width:100%;}
-
-	#topbar{}
-
 
 	/*#mainav ul{display:none;}*/
 	#mainav form{display:block;}
@@ -455,17 +615,9 @@ table a, #comments a{background-color:inherit;}
 	.font-x3{font-size:1.6rem;}
 }
 
-.fixed-top{
-	position: fixed;
-	width: 100%;
-	z-index: 999;
-	background-color: #FFFFFF;
-}
 
-.projects{
-	padding-top: 120px;
-	padding-bottom: 50px;
-}
+
+
 .carousel-caption{
 	background-color:rgba(0,0,0,.75);
 	bottom: 0px;
@@ -554,10 +706,12 @@ table a, #comments a{background-color:inherit;}
 
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-	border-color: #0091ffb4;
+	
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
 	border-width:1px;
 	background-color: #3183ff49;
 	color: #272727;
+
 }
 .nav-tabs .nav-link{
 	background-color: #a7a7a7a2;
